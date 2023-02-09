@@ -10,8 +10,4 @@ for i in range(n-1):
 
 diff.sort()
 result = 0
-
-for i in range(n-k):
-    result += diff[i]
-    
-print(result)
+print(sum(diff[:n-k]))
