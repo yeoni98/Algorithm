@@ -9,4 +9,4 @@ for i in range(m):
 
 for i in range(n):
     ans = sys.stdin.readline().rstrip()
-    print(dict[ans])
+    print(dict.get(ans))
