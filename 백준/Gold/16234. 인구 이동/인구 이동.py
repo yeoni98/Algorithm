@@ -1,6 +1,7 @@
 import sys
 from collections import deque
 
+
 n, l, r = map(int,sys.stdin.readline().split())
 a = []
 dx = [-1,1,0,0]
