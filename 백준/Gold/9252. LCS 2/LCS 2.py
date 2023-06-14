@@ -17,5 +17,6 @@ for i in range(1,len(a)):
             else:
                 dp[i][j] = dp[i][j-1]
 
-print(len(dp[-1][-1]))
-print(dp[-1][-1])
+rst = dp[-1][-1]
+print(len(rst),rst,sep='\n')
+
