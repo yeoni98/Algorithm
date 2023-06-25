@@ -12,6 +12,8 @@ while start<=end:
     for t in trees:
         if t>mid:
             total += (t-mid)
+        if total>m:
+            break
     if total<m:
         end = mid -1
     else:
