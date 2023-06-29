@@ -1,15 +1,15 @@
 import sys
-from collections import deque
+import heapq
+from heapq import heapify
 
 n, m = map(int,sys.stdin.readline().split())
 cards = list(map(int,sys.stdin.readline().split()))
+heapify(cards)
 
-cnt = 1
-while cnt<=m:
-    cards.sort()
-    s = cards[0]+cards[1]
-    cards[0], cards[1] = s,s
-    cnt +=1
+for i in range(m):
+    hap = heapq.heappop(cards) + heapq.heappop(cards)
+    for j in range(2):
+        heapq.heappush(cards, hap)
 
 print(sum(cards))
 
