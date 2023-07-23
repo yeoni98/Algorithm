@@ -12,7 +12,7 @@ for i in range(n):
         total = lst[start]+lst[end]
         if total == num[i]:
             cnt += 1
-            break # 더해서 같은 숫자가 나와도 cnt가 안되기 때문에 나가준다
+            break
         if total < num[i]:
             start += 1
         else:
