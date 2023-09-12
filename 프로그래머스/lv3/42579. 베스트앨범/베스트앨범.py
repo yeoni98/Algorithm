@@ -26,8 +26,4 @@ def solution(genres, plays):
     
     
     return answer
-# 1. dict1 에 g에 따른 (i, p) 저장 len(dict1[k]) 로 정렬~
-# 2. dict2[g] = p. g에 대한 p 저장 => 내부에서 p를 내림차순으로 -> 2개까지만
-# 3. 
-
 
